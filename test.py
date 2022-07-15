@@ -57,7 +57,7 @@ if __name__ == "__main__":
 
     # used if args.invert_images is true
     parser.add_argument("--w_iterations", type=int, default=250)
-    parser.add_argument("--wp_iterations", type=int, default=500)
+    parser.add_argument("--wp_iterations", type=int, default=200)
     parser.add_argument("--lambda_l2", type=float, default=1)
     parser.add_argument("--lambda_p", type=float, default=1)    
     parser.add_argument("--lambda_noise", type=float, default=1e5)
