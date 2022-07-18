@@ -56,8 +56,8 @@ if __name__ == "__main__":
     parser.add_argument('--invert_images', action='store_true', help='invert images in sample folder to generate caricature from them')
 
     # used if args.invert_images is true
-    parser.add_argument("--w_iterations", type=int, default=250)
-    parser.add_argument("--wp_iterations", type=int, default=200)
+    parser.add_argument("--w_iterations", type=int, default=200)
+    parser.add_argument("--wp_iterations", type=int, default=100)
     parser.add_argument("--lambda_l2", type=float, default=1)
     parser.add_argument("--lambda_p", type=float, default=1)    
     parser.add_argument("--lambda_noise", type=float, default=1e5)
