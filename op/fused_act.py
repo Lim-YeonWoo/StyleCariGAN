@@ -12,9 +12,7 @@ fused = load(
     "fused",
     sources=[
         os.path.join(module_path, "fused_bias_act.cpp"),
-        # os.path.join(module_path, "fused_bias_act_kernel.cu"), 
-        # cpu만 쓰고서 원래 명령어대로 실행하려 했더니 이 부분에서 에러가 나길래
-        # 혹시 train없이 test만 할때는 이 부분이 안 필요하지 않을까 싶어서... 주석처리 후 test
+        os.path.join(module_path, "fused_bias_act_kernel.cu"), 
     ],
 )
 
